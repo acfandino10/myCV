@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <MainBar :make-visible="false"/>
     <div class="logoPosition">
       <img style="height:30%;filter: brightness(0) invert(1); width: 30%" fluid alt="Ana logo" src="https://lh3.googleusercontent.com/y_iYAi-BIgoflpWT1E7JJr2w6S5ChSJPixmauN7BJ9NMTfw3SiodnFnqCLDJp_Xh0Y6cLOfzogtSZqUXELrCZc_KXoH2Vn3CnPmhOB5jbSPxHBFqqmN8cX_vyu1sDlVUx4Jer9QKtzD7bA0PM8ScQq5px55a55Kcj9QQjto7ANAhm7rRHPDqMck91WWIpSObeYIoyrhEWtXLFyhJEexztZT5T0eja5XKOwSBRblHVqjf1X--CmZBAZNJ9nyIlW3s_kmItD1JtVXIKzZzG-7Y8B9ddW-DO9WSgCx5ycpHVZxKenHtg-Xeyp83M32wdhIx6JNUpM-O2QN1AG7J7VcHi5XmCiMwD8SrHp3zANUCIy3bWEDYFygLebVAb4IZmKPVy2Pw6HYZLJeC3R-bY95mPBon3EFWZ_0Ffi8KoO4J2FOEdIAm91Xr6LK0k9Lqq4p0Ci6wXswZHYs-TQKjQhjhmGW-nmYFVKv36NgZrEO-P0tt0WM4SVKV2cvYhX4IdrxQvX_C4p5rrbUFwmZCu_Q1jYKTuzpdwIBOHKarOoHPPyQi8mmmoPeyK832fo47kM38jmd5VXKLmvRkJd2Lts0c_ZJbVNvCMgE4a0Cgz5IMyAekY2qJNEkzHrAue1YIY47zTI3qH6XRKmDw_HH3ClCmtA7k8o-u9qbd=w1024-h768-no">
    </div>
@@ -53,9 +54,15 @@
     </b-carousel>
 
     <MyMainCV msg="Welcome to Your Vue.js App"/>
-    <b-card title="Design every aspect of your life"
+    <b-card
+            class="theFooter"
+            title="Design every aspect of your life"
             footer-tag="footer">
-      <em slot="footer">Ana Camila Fandiño de la Hoz</em>
+      <img style="border-radius: 50%;height: 10%; width: 10%;" fluid-grow="10%" src="https://lh3.googleusercontent.com/9_hGv2NAUV2D-9D6nryCM8os1KNGLSYBW7tiGwZIwBtmWkPYsL6bpiCyI5qtby5vOLTan3F3LtUuvxb2vcFi5XGsFUV3Dlm41jRq9rKU0fJ1p6XWd3vnjlZ9U5idk99S5VpAaziK3dEEJUs2KjdcWgcWddKfXTfmqa4ZZZs61DK3rGvpYQ_xyc1NzmeNHCLwpbBeUdoWz_66VQVk4pW-APmHijpr-ezlEilgRvstTLip8jC9K-rOUvJFl4mBJNOKABnPFC3qXixoRa_y7w_kc2f5sxrFD5--BfFi3blW3HQdA3gvq38c8hL_qF7XQCxHtN83BatHLHxLBnp5JqsuGgiCjlRLNLkwusTGULbWrDc5kJi2LnnzrEWW9Wte41MIHH6C1TEcV8y_hUfkUJ8e9xvMYMSlbLMf8nQzMUMjBmySX8KpA8sBb0HpBwn67PhRoyNDeEYyQHf804lraWqWmQnR-SJY4EmcEaTBk1goFTZ6fFj0s6TRHPM563rAp0oNFFKqMoA-IFXShtZFOu90xlJg7etP1MuG_6zjySpGuh-cHGHC-nEHb3YwrnxTNT6SIu1ZPA7MnFYVPrVnm6gFy0Y-IU-iB2LWFw7NgZqIvvCbrPmji3cqLGW2XoiYMzGEIU95dRqo39D-efuNOmCbljOAY-BOygl1=s943-no"/>
+      <div slot="footer">
+        <p>Copyright &copy 2016 by <a href="https://www.facebook.com/anaca.fandino">anaca</a>. All rights reserved.</p>
+        <p>Find the beauty in everything you do.</p>
+      </div>
     </b-card>
 
 
@@ -64,11 +71,13 @@
 
 <script>
 import MyMainCV from './components/MyMainCV.vue'
+import MainBar from './components/MainBar.vue'
 
 export default {
   name: 'app',
   components: {
-    MyMainCV
+    MyMainCV,
+    MainBar
   },
   data () {
     return {
@@ -88,8 +97,15 @@ export default {
 </script>
 
 <style scooped>
-  .alignLeft{
-    text-align: left;
+
+
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+  .theFooter{
+    text-align: center;
+    font-family: Amatic SC;
+    font-size: 150%;
+    padding-top: 50px;
   }
   .logoPosition {
     text-align: left !important;
