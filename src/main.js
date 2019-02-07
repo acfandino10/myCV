@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vuetify from 'vuetify'
 
-Vue.use(Vuetify)
 
 Vue.use(BootstrapVue)
+Vue.use(Vuetify)
 
 Vue.config.productionTip = false
 
