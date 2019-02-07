@@ -1,12 +1,34 @@
 <template>
   <div id="app">
     <MainBar :make-visible="false"/>
+
+      <div class="logoPosition2">
+          <b-navbar toggleable="md" class="mainBar">
+
+              <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+              <b-navbar-brand href="#" class="transformCooler" style="margin-top: 10%;">Ingeniera de Sistemas</b-navbar-brand>
+
+              <b-collapse is-nav id="nav_collapse2">
+
+                  <b-navbar-nav class="ml-auto">
+                      <b-nav-item href="#" class="transformCooler2">Profile</b-nav-item>
+                      <b-nav-item href="#" class="transformCooler2">Goal</b-nav-item>
+                      <b-nav-item href="#" class="transformCooler2">Education</b-nav-item>
+                      <b-nav-item href="#" class="transformCooler2">Job Experience</b-nav-item>
+                      <b-nav-item href="#" class="transformCooler2">Skills</b-nav-item>
+                      <b-nav-item href="#" class="transformCooler2">Hobbies</b-nav-item>
+                  </b-navbar-nav>
+
+              </b-collapse>
+          </b-navbar>
+      </div>
     <div class="logoPosition">
-      <img style="height:30%;filter: brightness(0) invert(1); width: 30%" fluid alt="Ana logo" src="https://lh3.googleusercontent.com/y_iYAi-BIgoflpWT1E7JJr2w6S5ChSJPixmauN7BJ9NMTfw3SiodnFnqCLDJp_Xh0Y6cLOfzogtSZqUXELrCZc_KXoH2Vn3CnPmhOB5jbSPxHBFqqmN8cX_vyu1sDlVUx4Jer9QKtzD7bA0PM8ScQq5px55a55Kcj9QQjto7ANAhm7rRHPDqMck91WWIpSObeYIoyrhEWtXLFyhJEexztZT5T0eja5XKOwSBRblHVqjf1X--CmZBAZNJ9nyIlW3s_kmItD1JtVXIKzZzG-7Y8B9ddW-DO9WSgCx5ycpHVZxKenHtg-Xeyp83M32wdhIx6JNUpM-O2QN1AG7J7VcHi5XmCiMwD8SrHp3zANUCIy3bWEDYFygLebVAb4IZmKPVy2Pw6HYZLJeC3R-bY95mPBon3EFWZ_0Ffi8KoO4J2FOEdIAm91Xr6LK0k9Lqq4p0Ci6wXswZHYs-TQKjQhjhmGW-nmYFVKv36NgZrEO-P0tt0WM4SVKV2cvYhX4IdrxQvX_C4p5rrbUFwmZCu_Q1jYKTuzpdwIBOHKarOoHPPyQi8mmmoPeyK832fo47kM38jmd5VXKLmvRkJd2Lts0c_ZJbVNvCMgE4a0Cgz5IMyAekY2qJNEkzHrAue1YIY47zTI3qH6XRKmDw_HH3ClCmtA7k8o-u9qbd=w1024-h768-no">
-   </div>
-    <div class="logoPosition2">
-      <img style="height:30%; width: 30%" fluid alt="Ana logo" src="https://lh3.googleusercontent.com/y_iYAi-BIgoflpWT1E7JJr2w6S5ChSJPixmauN7BJ9NMTfw3SiodnFnqCLDJp_Xh0Y6cLOfzogtSZqUXELrCZc_KXoH2Vn3CnPmhOB5jbSPxHBFqqmN8cX_vyu1sDlVUx4Jer9QKtzD7bA0PM8ScQq5px55a55Kcj9QQjto7ANAhm7rRHPDqMck91WWIpSObeYIoyrhEWtXLFyhJEexztZT5T0eja5XKOwSBRblHVqjf1X--CmZBAZNJ9nyIlW3s_kmItD1JtVXIKzZzG-7Y8B9ddW-DO9WSgCx5ycpHVZxKenHtg-Xeyp83M32wdhIx6JNUpM-O2QN1AG7J7VcHi5XmCiMwD8SrHp3zANUCIy3bWEDYFygLebVAb4IZmKPVy2Pw6HYZLJeC3R-bY95mPBon3EFWZ_0Ffi8KoO4J2FOEdIAm91Xr6LK0k9Lqq4p0Ci6wXswZHYs-TQKjQhjhmGW-nmYFVKv36NgZrEO-P0tt0WM4SVKV2cvYhX4IdrxQvX_C4p5rrbUFwmZCu_Q1jYKTuzpdwIBOHKarOoHPPyQi8mmmoPeyK832fo47kM38jmd5VXKLmvRkJd2Lts0c_ZJbVNvCMgE4a0Cgz5IMyAekY2qJNEkzHrAue1YIY47zTI3qH6XRKmDw_HH3ClCmtA7k8o-u9qbd=w1024-h768-no">
+        <img style="height:30%;filter: brightness(0) invert(1); width: 30%" fluid alt="Ana logo" src="https://lh3.googleusercontent.com/y_iYAi-BIgoflpWT1E7JJr2w6S5ChSJPixmauN7BJ9NMTfw3SiodnFnqCLDJp_Xh0Y6cLOfzogtSZqUXELrCZc_KXoH2Vn3CnPmhOB5jbSPxHBFqqmN8cX_vyu1sDlVUx4Jer9QKtzD7bA0PM8ScQq5px55a55Kcj9QQjto7ANAhm7rRHPDqMck91WWIpSObeYIoyrhEWtXLFyhJEexztZT5T0eja5XKOwSBRblHVqjf1X--CmZBAZNJ9nyIlW3s_kmItD1JtVXIKzZzG-7Y8B9ddW-DO9WSgCx5ycpHVZxKenHtg-Xeyp83M32wdhIx6JNUpM-O2QN1AG7J7VcHi5XmCiMwD8SrHp3zANUCIy3bWEDYFygLebVAb4IZmKPVy2Pw6HYZLJeC3R-bY95mPBon3EFWZ_0Ffi8KoO4J2FOEdIAm91Xr6LK0k9Lqq4p0Ci6wXswZHYs-TQKjQhjhmGW-nmYFVKv36NgZrEO-P0tt0WM4SVKV2cvYhX4IdrxQvX_C4p5rrbUFwmZCu_Q1jYKTuzpdwIBOHKarOoHPPyQi8mmmoPeyK832fo47kM38jmd5VXKLmvRkJd2Lts0c_ZJbVNvCMgE4a0Cgz5IMyAekY2qJNEkzHrAue1YIY47zTI3qH6XRKmDw_HH3ClCmtA7k8o-u9qbd=w1024-h768-no">
     </div>
+    <!--<div class="logoPosition2">
+      <img style="height:30%; width: 30%" fluid alt="Ana logo" src="https://lh3.googleusercontent.com/y_iYAi-BIgoflpWT1E7JJr2w6S5ChSJPixmauN7BJ9NMTfw3SiodnFnqCLDJp_Xh0Y6cLOfzogtSZqUXELrCZc_KXoH2Vn3CnPmhOB5jbSPxHBFqqmN8cX_vyu1sDlVUx4Jer9QKtzD7bA0PM8ScQq5px55a55Kcj9QQjto7ANAhm7rRHPDqMck91WWIpSObeYIoyrhEWtXLFyhJEexztZT5T0eja5XKOwSBRblHVqjf1X--CmZBAZNJ9nyIlW3s_kmItD1JtVXIKzZzG-7Y8B9ddW-DO9WSgCx5ycpHVZxKenHtg-Xeyp83M32wdhIx6JNUpM-O2QN1AG7J7VcHi5XmCiMwD8SrHp3zANUCIy3bWEDYFygLebVAb4IZmKPVy2Pw6HYZLJeC3R-bY95mPBon3EFWZ_0Ffi8KoO4J2FOEdIAm91Xr6LK0k9Lqq4p0Ci6wXswZHYs-TQKjQhjhmGW-nmYFVKv36NgZrEO-P0tt0WM4SVKV2cvYhX4IdrxQvX_C4p5rrbUFwmZCu_Q1jYKTuzpdwIBOHKarOoHPPyQi8mmmoPeyK832fo47kM38jmd5VXKLmvRkJd2Lts0c_ZJbVNvCMgE4a0Cgz5IMyAekY2qJNEkzHrAue1YIY47zTI3qH6XRKmDw_HH3ClCmtA7k8o-u9qbd=w1024-h768-no">
+    </div>-->
     <b-carousel id="carousel1"
                 style="text-shadow: 1px 1px 2px #333;"
                 controls
@@ -53,7 +75,31 @@
 
     </b-carousel>
 
+     <!-- <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>-->
     <MyMainCV msg="Welcome to Your Vue.js App"/>
+      <v-sparkline
+              :value="[0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0]"
+              :gradient="['#222']"
+              :smooth="10"
+              :padding="8"
+              :line-width="2"
+              :stroke-linecap="'round'"
+              :gradient-direction="'top'"
+              auto-draw
+      ></v-sparkline>
+      <!--<v-parallax
+              dark
+              src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      >
+          <v-layout
+                  align-center
+                  column
+                  justify-center
+          >
+              <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>
+              <h4 class="subheading">Build your application today!</h4>
+          </v-layout>
+      </v-parallax>-->
     <b-card
             class="theFooter"
             title="Design every aspect of your life"
@@ -65,6 +111,10 @@
         <p>Find the beauty in everything you do.</p>
       </div>
     </b-card>
+      <!--<v-parallax
+              height="300"
+              src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+      ></v-parallax>-->
 
 
   </div>
@@ -100,7 +150,7 @@ export default {
 <style scooped>
 
 
-  @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville');
 
   .theFooter{
     text-align: center;
@@ -112,18 +162,53 @@ export default {
     text-align: left !important;
     position: absolute;
     top: 5% !important;
-    left: 0% !important;
+    left: 30% !important;
     z-index: 1;
   }
   .logoPosition2 {
     text-align: left !important;
     position: absolute;
     top: 5% !important;
-    left: 0.2% !important;
+    left: 50% !important;
     z-index: 1;
   }
+  .transformCooler {
+      /* Safari */
+      -webkit-transform: rotate(-90deg);
+
+      /* Firefox */
+      -moz-transform: rotate(-90deg);
+
+      /* IE */
+      -ms-transform: rotate(-90deg);
+
+      /* Opera */
+      -o-transform: rotate(-90deg);
+
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  .transformCooler2 {
+      margin:0% !important;
+      padding:0% !important;
+      /* Safari */
+      -webkit-transform: rotate(-90deg);
+
+      /* Firefox */
+      -moz-transform: rotate(-90deg);
+
+      /* IE */
+      -ms-transform: rotate(-90deg);
+
+      /* Opera */
+      -o-transform: rotate(-90deg);
+
+      /* Internet Explorer */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
