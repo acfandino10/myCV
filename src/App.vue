@@ -1,12 +1,10 @@
 <template>
   <div id="app">
    <TheBanner/>
-    <b-file src="./assets/theaudio.mp3"/>
-    <audio controls>
+    <audio controls autoplay>
       <source src="./assets/theaudio.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
-    <vue-audio file="./assets/theaudio.mp3" :auto-play="true" :loop="true"></vue-audio>
     <MyMainCV msg="Welcome to Your Vue.js App"/>
     <b-card
             footer-tag="footer">
