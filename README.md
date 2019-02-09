@@ -28,7 +28,7 @@ If you want to run it locally there's a change that must be done in the componen
                     <b-nav-item href="MyMainCV.html#hobbies">Hobbies</b-nav-item>
                </b-navbar-nav>
  
- plus an import on the script
+ Plus an import on the script
  
     import MyMainCV from "./MyMainCV";
     
@@ -37,7 +37,7 @@ Then, you just run:
     npm install
     npm run serve
  
- The reason of this change is because on the deployed version the dist changes the directions of the folders and this components are on the same page so it works fine with just #hobbies instead of MyMainCV.html#hobbies on the href.
+ The reason of this change is because on the deployed version on the dist the directions of the folders change and since this components are on the same page, it works fine with just #hobbies instead of MyMainCV.html#hobbies on the href.
  
  ## The Deployed Version
  
