@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vuetify from 'vuetify'
 import Router from 'vue-router'
+import VueAudio from 'vue-audio'
 
 Vue.use(Router)
+Vue.use(VueAudio)
 Vue.use(BootstrapVue)
 Vue.use(Vuetify)
 Vue.config.productionTip = false

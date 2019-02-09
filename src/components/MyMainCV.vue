@@ -14,6 +14,22 @@
               High School at Gimnasio Vermont							2013
               University at Los Andes University (1 year from graduation)	      	       		2013-now
           </p>
+          <h3 id="projects">Projects</h3>
+          <p>Wiring Challenge (2014) - Interactive project developed on wiring with external sensors that depending on amount of people on table will display a color to fill the atmosphere.
+              CCPL (Colombian Collegiate Programming League) (2014) - Classified for national collegiate programming and representation on regional collegiate programming competition.
+              Hackaton 88nine (2017) - Java project for a Shazam like app for independent music.
+              Hackaton Colpatria (2018) - Node (back) and Vue (front) application to share points with clients (via SMS) for shopping.
+              Focus (2018-Present) - It’s a startup that will help students connect with others and teach grupal classes and share knowledge. Mobile application developed on Ionic Framework.
+              PMC (2018) - It’s a visual recognition project to help shops analyze clients satisfaction by their facial emotions. Developed on python.</p>
+
+          <br>
+          <p>This is one of the projects I have worked in class: </p>
+          <b-embed type="iframe"
+                   aspect="16by9"
+                   src="https://www.youtube.com/embed/CP0KWZ7-1BY?autoplay=1&mute=1"
+                   allowfullscreen
+
+          ></b-embed>
       </div>
 
 
@@ -22,7 +38,7 @@
       <b-container class="bv-example-row">
           <b-row>
               <b-col></b-col>
-              <b-col sm="8">
+              <b-col sm="8" style="color:gray !important;">
                   <h3 id="experience">Job Experience</h3>
                   <p>
                       Part time call center agent on Sitel on Comcast campaign(for 8 months)					2016
@@ -38,14 +54,6 @@
                   </p>
                   <h3 id="hobbies">Hobbies</h3>
                   <p>Tenis, squash, trotar</p>
-
-                  <h3 id="projects">Proyectos</h3>
-                  <p>Wiring Challenge (2014) - Interactive project developed on wiring with external sensors that depending on amount of people on table will display a color to fill the atmosphere.
-                  CCPL (Colombian Collegiate Programming League) (2014) - Classified for national collegiate programming and representation on regional collegiate programming competition.
-                  Hackaton 88nine (2017) - Java project for a Shazam like app for independent music.
-                  Hackaton Colpatria (2018) - Node (back) and Vue (front) application to share points with clients (via SMS) for shopping.
-                  Focus (2018-Present) - It’s a startup that will help students connect with others and teach grupal classes and share knowledge. Mobile application developed on Ionic Framework.
-                      PMC (2018) - It’s a visual recognition project to help shops analyze clients satisfaction by their facial emotions. Developed on python.</p>
 
               </b-col>
           </b-row>
@@ -67,6 +75,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+    @import url('https://fonts.googleapis.com/css?family=Cinzel|Libre+Barcode+39+Text|Major+Mono+Display|Monoton|Pacifico');
 h3 {
   margin: 40px 0 0;
 }
@@ -83,5 +93,25 @@ a {
 }
     .profilediv {
         padding:10%;
+    }
+    #profile {
+        font-family: 'Monoton', cursive;
+    }
+    #projects {
+        font-family: 'Libre Barcode 39 Text', cursive;
+    }
+    #experience {
+
+        font-family: 'Cinzel', serif;
+    }
+    #hobbies {
+
+        font-family: 'Cinzel', serif;
+    }
+    #education {
+        font-family: 'Major Mono Display', monospace;
+    }
+    #skills {
+        font-family: 'Pacifico', cursive;
     }
 </style>

@@ -4,19 +4,16 @@
 
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-            <b-navbar-brand href="#">
-                <img style="height: 20%;width: 20%;" src="../assets/blacklogo.png"/>
-            </b-navbar-brand>
 
             <b-collapse is-nav id="nav_collapse">
 
                 <b-navbar-nav>
-                    <b-nav-item href="MyMainCV.html#profile">Profile</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#projects">Projects</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#education">Education</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#experience">Experience</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#skills">Skills</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#hobbies">Hobbies</b-nav-item>
+                    <b-nav-item href="#profile">Profile</b-nav-item>
+                    <b-nav-item href="#projects">Projects</b-nav-item>
+                    <b-nav-item href="#education">Education</b-nav-item>
+                    <b-nav-item href="#experience">Experience</b-nav-item>
+                    <b-nav-item href="#skills">Skills</b-nav-item>
+                    <b-nav-item href="#hobbies">Hobbies</b-nav-item>
                 </b-navbar-nav>
 
 

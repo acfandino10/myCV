@@ -4,26 +4,23 @@
 
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-            <b-navbar-brand href="#">
-                <img style="height: 20%;width: 20%;" src="../assets/blacklogo.png"/>
-            </b-navbar-brand>
 
             <b-collapse is-nav id="nav_collapse">
 
                 <b-navbar-nav>
-                    <b-nav-item href="MyMainCV.html#profile">Profile</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#projects">Projects</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#education">Education</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#experience">Experience</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#skills">Skills</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#hobbies">Hobbies</b-nav-item>
+                    <b-nav-item href="#profile">Profile</b-nav-item>
+                    <b-nav-item href="#projects">Projects</b-nav-item>
+                    <b-nav-item href="#education">Education</b-nav-item>
+                    <b-nav-item href="#experience">Experience</b-nav-item>
+                    <b-nav-item href="#skills">Skills</b-nav-item>
+                    <b-nav-item href="#hobbies">Hobbies</b-nav-item>
                 </b-navbar-nav>
 
 
             </b-collapse>
         </b-navbar>
         <div class="titlePosition">
-            An a Ca mi la Fan di ño de la Ho z
+            An a Ca mi la Fa n di ño de la Ho z
         </div>
 
         <div class="mainBarPosition">
@@ -36,12 +33,12 @@
                 <b-collapse is-nav id="nav_collapse2">
 
                     <b-navbar-nav>
-                        <b-nav-item href="MyMainCV.html#profile" class="transformCooler2"><span class="lightercolor">Profile</span></b-nav-item>
-                        <b-nav-item href="MyMainCV.html#projects" class="transformCooler2"><span class="lightercolor">Projects</span></b-nav-item>
-                        <b-nav-item href="MyMainCV.html#education" class="transformCooler2"><span class="lightercolor">Education</span></b-nav-item>
-                        <b-nav-item href="MyMainCV.html#experience" class="transformCooler2"><span class="lightercolor">Experience</span></b-nav-item>
-                        <b-nav-item href="MyMainCV.html#skills" class="transformCooler2"><span class="lightercolor">Skills</span></b-nav-item>
-                        <b-nav-item href="MyMainCV.html#hobbies" class="transformCooler2"><span class="lightercolor">Hobbies</span></b-nav-item>
+                        <b-nav-item href="#profile" class="transformCooler2"><span class="lightercolor">Profile</span></b-nav-item>
+                        <b-nav-item href="#projects" class="transformCooler2"><span class="lightercolor">Projects</span></b-nav-item>
+                        <b-nav-item href="#education" class="transformCooler2"><span class="lightercolor">Education</span></b-nav-item>
+                        <b-nav-item href="#experience" class="transformCooler2"><span class="lightercolor">Experience</span></b-nav-item>
+                        <b-nav-item href="#skills" class="transformCooler2"><span class="lightercolor">Skills</span></b-nav-item>
+                        <b-nav-item href="#hobbies" class="transformCooler2"><span class="lightercolor">Hobbies</span></b-nav-item>
                     </b-navbar-nav>
 
                 </b-collapse>
@@ -84,7 +81,6 @@
 
 <script>
 
-    import MyMainCV from "./MyMainCV";
 
     export default {
         name: "TheBanner",
@@ -132,7 +128,7 @@
         font-size: 20rem;
         letter-spacing: 2px;
         line-height: 0.5;
-        color: rgba(74, 116, 112,0.5);
+        color: rgba(74, 116, 112,0.3);
         position: absolute;
         top: 5% !important;
         left: 5% !important;
