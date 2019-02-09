@@ -30,6 +30,9 @@
         name: "MainBar",
         props: ['makeVisible'],
         data () {
+            return {
+
+            }
         },
     }
 </script>

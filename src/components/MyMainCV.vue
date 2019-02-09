@@ -1,6 +1,6 @@
 <template>
   <div class="bigcontent">
-      <h3>Profile</h3>
+      <h3 id="profile">Profile</h3>
       <p>Estudiante de sexto semestre de Ingeniería de Sistemas en la Universidad de los Andes, bilingüe(inglés-español), amigable, cordial, competente para trabajar y dispuesta a aprender. En busca de puesto gratificante para comenzar prácticas profesionales para así aplicar el conocimiento ya obtenido durante la carrera.
 
         Experiencia como asistente de investigación en la Universidad de Wisconsin-Milwaukee en proyecto de Inteligencia Artificial que le permitieron obtener conocimientos de minería de datos, Watson, apis(Twitter y Reddit), IUI(Intelligence User Interface) y NLP(Natural Language Processing).
@@ -9,7 +9,7 @@
 
         Adicional, de experiencia laboral 8 meses como agente bilingüe de call center en Sitel que le permitieron desarrollar habilidades como el buen trato con el cliente.
       </p>
-      <h3>Goal</h3>
+      <h3 id="goal">Goal</h3>
       <p>
         Sixth semester student of Computer and System Engineering and Design at Los Andes University in Bogotá, Colombia.
         Friendly, gentle, kind and excited to learn. Looking for a research project in another country where to practice
@@ -26,26 +26,24 @@
           <b-row>
               <b-col></b-col>
               <b-col sm="8">
-                  <h3>Goal</h3>
-                  <p>En busca de un puesto gratificante para comenzar prácticas profesionales.</p>
-                  <h3>Education</h3>
+                  <h3 id="education">Education</h3>
                   <p>
                       High School at Gimnasio Vermont							2013
                       University at Los Andes University (1 year from graduation)	      	       		2013-now
                   </p>
-                  <h3>Job Experience</h3>
+                  <h3 id="experience">Job Experience</h3>
                   <p>
                       Part time call center agent on Sitel(for 8 months)					2016
                       Asistente de Investigación en Universidad de Wisconsin-Milwaukee(5 meses)		2017
                   </p>
-                  <h3>Skills</h3>
+                  <h3 id="skills">Skills</h3>
                   <p>
                       Knowledge: Frontend, backend, database, Http requests, programming languages, servers
                       Tools: Java, JavaScript, HTML, CSS, C++, SQLDeveloper, Assembly,Tomcat, Glassfish, Maven, Github
                       Other Participations: Neuro-Linguistic Psychology seminar, Wiring Challenge and CCPL programming contests.
 
                   </p>
-                  <h3>Hobbies</h3>
+                  <h3 id="hobbies">Hobbies</h3>
                   <p>Tenis, squash, trotar</p>
               </b-col>
           </b-row>

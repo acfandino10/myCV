@@ -1,16 +1,37 @@
 <template>
     <div class="bannerContent">
-        <MainBar :make-visible="false"/>
+        <b-navbar toggleable="md" class="barStyle">
+
+            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+            <b-navbar-brand href="#">
+                <img style="height: 20%;width: 20%;" src="../assets/blacklogo.png"/>
+            </b-navbar-brand>
+
+            <b-collapse is-nav id="nav_collapse">
+
+                <b-navbar-nav>
+                    <b-nav-item @click="changeTo('profile')">Profile</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#goal">Goal</b-nav-item>
+                    <b-nav-item @click="changeTo('education')">Education</b-nav-item>
+                    <b-nav-item @click="changeTo('experience')">Experience</b-nav-item>
+                    <b-nav-item @click="changeTo('skills')">Skills</b-nav-item>
+                    <b-nav-item @click="changeTo('hobbies')">Hobbies</b-nav-item>
+                </b-navbar-nav>
+
+
+            </b-collapse>
+        </b-navbar>
         <div class="titlePosition">
-            Ana Ca mi la Fan di ño de la Hoz
+            An a Ca mi la Fan di ño de la Ho z
         </div>
 
         <div class="mainBarPosition">
-            <b-navbar toggleable="md" class="mainBar">
+            <b-navbar toggleable="md" class="mainBar" type="dark">
 
                 <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-                <b-navbar-brand href="#" class="transformCooler" style="margin-top: 10%;">Estudiante Ingenieria<br> de Sistemas <br>& Diseño</b-navbar-brand>
+                <b-navbar-brand href="#" class="transformCooler" style="margin-top: 10%;">Computer  <br>Science & <br>Design Student</b-navbar-brand>
 
                 <b-collapse is-nav id="nav_collapse2">
 
@@ -45,16 +66,16 @@
                     @sliding-end="onSlideEnd"
         >
 
-            <b-carousel-slide class="carouselimgs" img-src="https://picsum.photos/1024/480/?image=52">
+            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/V9KpcCN/large.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide  class="carouselimgs" img-src="https://lh3.googleusercontent.com/Y8VT5aHMpAE6TzaZ8HwVGm4lD32hNalUzKnMGuaox0WiOz5w7bTHkfOuyLUcXyEDY2Nf_SyBHKJ3zER75CSFNmRNHqT8DD5SojPkw-KHT2v-w8uM55Ehx3QqlOemtIuLw0omJhJpCRjNcVUAf2IVUS-fmY1-kVJ43d6uUYqHZmIaqJGYWNOPpNFSq-ErHefKfZjoPQICwKQM5fljwZRGMoMNRYEwEFIim9HYpSTrOvf66eRwahNLvVPnWwYlsL9zrpBa6O883xI6PfQUmG8SVYlaz5CG_6LPbHPnGrWr2ohuAzeRY686XW0JN23tJIlDAGN3GRyQ0_9WX0Q_9z5rwM2daA38QeZEFG3owtWU6s2UospfBzwIgMwlJYtssblY-faO1OxykMO3J74iINHo5a-lhsYg06qKmas7rMGykLMwSImCjGLXnhaAIjTZNd0THvb7AA-AYlJiCauzM4c2-JixSOEMDTMFZEsZuRKk27olqJejJMgZYYCmk3I5kJo8y_8_24b1dz-IaSi9Ew7O16C0MdCgF_6FbFIZ1qtWQOIDZUbhoeFEi0BWYmYc02IuT4d048QaxGXwt9Zau2PuSGt3CKSUhy0Ag08ppKHl5-1nV88hgUx6ntKDsU5GB1UfNGwt7guMBQhWTPFw3D3Jk5iXsut7BrdN=w1258-h943-no">
+            <b-carousel-slide  class="carouselimgs" img-src="https://i.ibb.co/jVhW046/large2.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide class="carouselimgs" img-src="https://lh3.googleusercontent.com/CCozPlhVCZRrig5MkeCn6oFgrAWL_MVPlWX6t6vwpi3mLbU4EfwgswtIyyruvvHUcvuura3A_RcJLxHO-JX5_TB99YtiXhqYEt3FradXvhdzk6wYFPfJp1Lu2SSYykIU6uSR7KkC622dMFe7Le4vn2IGGO0tJdOzedBAoDad_uULBf2eBS9x43P0GLzY2UE-tDYuGQ0eAeld4cfmDC_qSAq5BrkG2PjMTkiZ5yBXBhjBMs5XDBN57vvJuRdEjJYxzQey_mVEX2_XYuYUmk4AgpTyRZHlh-BDdcNQm-fnrCN4gGxM-tlrUgPBP8ZaWCgiJUMOnLTcL8WKRNeU6IsTDgSAmopqZ4GhAS-0uVafnEXEogqViqXXTJUjYyuiesvDBkI9PUeQoR9YFYrubKfisrMYzCrx8vPpKp36065WTQVk2l_L-Gin6tfLhCGUI6MRsaOfC0zDPuKTjncrF3QAO73p9XbMkNOvccR1lmE0ELYcA3fPsOP3GCt2wS1z5i17vyetFhddaTm6I58_MhQYkWvxLPEaKPbpjKBOO4F-f1TyM4DM70xaCu8Crr01GfWw-eSvPtAqzXOg2YErcNBkF75uBLoUyoGvlI-kqDADENtPZkO7Aj59p1XI8ZUJ_mDgViKTZTXzs8jFU3ir_K6IKMInkKo6gLc=w1677-h943-no">
+            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/L9MsXhQ/large3.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide class="carouselimgs" img-src="https://data.whicdn.com/images/323618398/large.jpg">
+            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/JQCMcHp/large4.jpg">
             </b-carousel-slide>
 
         </b-carousel>
@@ -62,17 +83,29 @@
 </template>
 
 <script>
-    import MainBar from './MainBar.vue'
+    import MyMainCV from "./MyMainCV";
+
     export default {
         name: "TheBanner",
-        components: {
-            MainBar
-        },
         data () {
             return {
+                slide: 0,
+                sliding: null,
                 valueDeterminate: 50,
             }
         },
+        methods: {
+            onSlideStart () {
+                this.sliding = true
+            },
+            onSlideEnd () {
+                this.sliding = false
+            },
+            changeTo(value) {
+                this.$router.push({ path: `#${value}`})
+
+            }
+        }
     }
 </script>
 
@@ -99,7 +132,7 @@
         font-size: 20rem;
         letter-spacing: 2px;
         line-height: 0.5;
-        color: rgba(123,120,10,0.6);
+        color: rgba(74, 116, 112,0.5);
         position: absolute;
         top: 5% !important;
         left: 5% !important;
@@ -128,10 +161,10 @@
     }
 
     .transformCooler {
-        color: rgba(160,170,20,0.7) !important;
+        color: white !important;
     }
     .lightercolor {
-        color: rgba(255,255,255,0.5);
+        color: white;
     }
     .transformCooler2 {
         font-family: 'Anton';
@@ -154,4 +187,15 @@
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     }
 
+    .navbar-toggler-icon {
+        background-color: white;
+        color:white;
+    }
+    .barStyle{
+        background-color: transparent;
+        position: fixed;
+        top:0px;
+        left: 0px;
+        z-index: auto;
+    }
 </style>
