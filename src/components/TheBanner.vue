@@ -11,12 +11,12 @@
             <b-collapse is-nav id="nav_collapse">
 
                 <b-navbar-nav>
-                    <b-nav-item @click="changeTo('profile')">Profile</b-nav-item>
-                    <b-nav-item href="MyMainCV.html#goal">Goal</b-nav-item>
-                    <b-nav-item @click="changeTo('education')">Education</b-nav-item>
-                    <b-nav-item @click="changeTo('experience')">Experience</b-nav-item>
-                    <b-nav-item @click="changeTo('skills')">Skills</b-nav-item>
-                    <b-nav-item @click="changeTo('hobbies')">Hobbies</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#profile">Profile</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#projects">Projects</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#education">Education</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#experience">Experience</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#skills">Skills</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#hobbies">Hobbies</b-nav-item>
                 </b-navbar-nav>
 
 
@@ -36,12 +36,12 @@
                 <b-collapse is-nav id="nav_collapse2">
 
                     <b-navbar-nav>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Profile</span></b-nav-item>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Goal</span></b-nav-item>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Education</span></b-nav-item>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Experience</span></b-nav-item>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Skills</span></b-nav-item>
-                        <b-nav-item href="#" class="transformCooler2"><span class="lightercolor">Hobbies</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#profile" class="transformCooler2"><span class="lightercolor">Profile</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#projects" class="transformCooler2"><span class="lightercolor">Projects</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#education" class="transformCooler2"><span class="lightercolor">Education</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#experience" class="transformCooler2"><span class="lightercolor">Experience</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#skills" class="transformCooler2"><span class="lightercolor">Skills</span></b-nav-item>
+                        <b-nav-item href="MyMainCV.html#hobbies" class="transformCooler2"><span class="lightercolor">Hobbies</span></b-nav-item>
                     </b-navbar-nav>
 
                 </b-collapse>
@@ -69,13 +69,13 @@
             <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/V9KpcCN/large.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide  class="carouselimgs" img-src="https://i.ibb.co/jVhW046/large2.jpg">
+            <b-carousel-slide  class="carouselimgs" img-src="https://i.ibb.co/FVmR0Mz/large1.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/L9MsXhQ/large3.jpg">
+            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/ZhMFTD9/large2.jpg">
             </b-carousel-slide>
 
-            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/JQCMcHp/large4.jpg">
+            <b-carousel-slide class="carouselimgs" img-src="https://i.ibb.co/c2wBmMK/large3.jpg">
             </b-carousel-slide>
 
         </b-carousel>
@@ -83,6 +83,7 @@
 </template>
 
 <script>
+
     import MyMainCV from "./MyMainCV";
 
     export default {
@@ -101,9 +102,8 @@
             onSlideEnd () {
                 this.sliding = false
             },
-            changeTo(value) {
-                this.$router.push({ path: `#${value}`})
-
+            changeTo() {
+                this.$router.push('/#profile')
             }
         }
     }

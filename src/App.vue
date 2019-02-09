@@ -1,43 +1,34 @@
 <template>
   <div id="app">
-      <TheBanner/>
-    <!--<v-parallax
-                  dark
-                  src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-          >
-              <v-layout
-                      align-center
-                      column
-                      justify-center
-              >
-                  <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>
-                  <h4 class="subheading">Build your application today!</h4>
-              </v-layout>
-          </v-parallax>-->
+    <TheBanner/>
     <MyMainCV msg="Welcome to Your Vue.js App"/>
     <b-card
             class="theFooter"
             footer-tag="footer">
-      <p>
-        GitHub https://github.com/acfandino10
-        Email ac.fandino10@uniandes.edu.co
-        Dirección Cra 54D # 183-50
-        Teléfono +57 3195320954
-        Bogotá D.C, Colombia
-      </p>
-      <img style="border-radius: 50%;height: 10%; width: 10%;" fluid-grow="10%"
-           src="https://lh3.googleusercontent.com/9_hGv2NAUV2D-9D6nryCM8os1KNGLSYBW7tiGwZIwBtmWkPYsL6bpiCyI5qtby5vOLTan3F3LtUuvxb2vcFi5XGsFUV3Dlm41jRq9rKU0fJ1p6XWd3vnjlZ9U5idk99S5VpAaziK3dEEJUs2KjdcWgcWddKfXTfmqa4ZZZs61DK3rGvpYQ_xyc1NzmeNHCLwpbBeUdoWz_66VQVk4pW-APmHijpr-ezlEilgRvstTLip8jC9K-rOUvJFl4mBJNOKABnPFC3qXixoRa_y7w_kc2f5sxrFD5--BfFi3blW3HQdA3gvq38c8hL_qF7XQCxHtN83BatHLHxLBnp5JqsuGgiCjlRLNLkwusTGULbWrDc5kJi2LnnzrEWW9Wte41MIHH6C1TEcV8y_hUfkUJ8e9xvMYMSlbLMf8nQzMUMjBmySX8KpA8sBb0HpBwn67PhRoyNDeEYyQHf804lraWqWmQnR-SJY4EmcEaTBk1goFTZ6fFj0s6TRHPM563rAp0oNFFKqMoA-IFXShtZFOu90xlJg7etP1MuG_6zjySpGuh-cHGHC-nEHb3YwrnxTNT6SIu1ZPA7MnFYVPrVnm6gFy0Y-IU-iB2LWFw7NgZqIvvCbrPmji3cqLGW2XoiYMzGEIU95dRqo39D-efuNOmCbljOAY-BOygl1=s943-no"/>
+
+
+      <b-container class="bv-example-row">
+        <b-row>
+          <b-col>
+            <img style="border-radius: 50%;height: 50%; width: 50%;" fluid-grow="20%"
+                 src="https://lh3.googleusercontent.com/9_hGv2NAUV2D-9D6nryCM8os1KNGLSYBW7tiGwZIwBtmWkPYsL6bpiCyI5qtby5vOLTan3F3LtUuvxb2vcFi5XGsFUV3Dlm41jRq9rKU0fJ1p6XWd3vnjlZ9U5idk99S5VpAaziK3dEEJUs2KjdcWgcWddKfXTfmqa4ZZZs61DK3rGvpYQ_xyc1NzmeNHCLwpbBeUdoWz_66VQVk4pW-APmHijpr-ezlEilgRvstTLip8jC9K-rOUvJFl4mBJNOKABnPFC3qXixoRa_y7w_kc2f5sxrFD5--BfFi3blW3HQdA3gvq38c8hL_qF7XQCxHtN83BatHLHxLBnp5JqsuGgiCjlRLNLkwusTGULbWrDc5kJi2LnnzrEWW9Wte41MIHH6C1TEcV8y_hUfkUJ8e9xvMYMSlbLMf8nQzMUMjBmySX8KpA8sBb0HpBwn67PhRoyNDeEYyQHf804lraWqWmQnR-SJY4EmcEaTBk1goFTZ6fFj0s6TRHPM563rAp0oNFFKqMoA-IFXShtZFOu90xlJg7etP1MuG_6zjySpGuh-cHGHC-nEHb3YwrnxTNT6SIu1ZPA7MnFYVPrVnm6gFy0Y-IU-iB2LWFw7NgZqIvvCbrPmji3cqLGW2XoiYMzGEIU95dRqo39D-efuNOmCbljOAY-BOygl1=s943-no"/>
+          </b-col>
+          <b-col sm="8">
+            <p>
+              GitHub <img href="https://github.com/acfandino10" src=""/>
+              <br>
+              Contact Email: ac.fandino10@uniandes.edu.co
+              <br>
+              Bogotá D.C, Colombia
+            </p>
+          </b-col>
+        </b-row>
+      </b-container>
       <div slot="footer">
         <p>Copyright &copy; 2016 by <a href="https://www.facebook.com/anaca.fandino">anaca</a>. All rights reserved.</p>
         <p>Find the beauty in everything you do.</p>
       </div>
     </b-card>
-      <!--<v-parallax
-              height="300"
-              src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-      ></v-parallax>-->
-
-
   </div>
 </template>
 

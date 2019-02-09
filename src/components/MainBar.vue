@@ -11,12 +11,12 @@
             <b-collapse is-nav id="nav_collapse">
 
                 <b-navbar-nav>
-                    <b-nav-item href="#">Profile</b-nav-item>
-                    <b-nav-item href="#">Goal</b-nav-item>
-                    <b-nav-item href="#">Education</b-nav-item>
-                    <b-nav-item href="#">Experience</b-nav-item>
-                    <b-nav-item href="#">Skills</b-nav-item>
-                    <b-nav-item href="#">Hobbies</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#profile">Profile</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#projects">Projects</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#education">Education</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#experience">Experience</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#skills">Skills</b-nav-item>
+                    <b-nav-item href="MyMainCV.html#hobbies">Hobbies</b-nav-item>
                 </b-navbar-nav>
 
 
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+    import MyMainCV from "./MyMainCV";
+
     export default {
         name: "MainBar",
         props: ['makeVisible'],
@@ -34,6 +36,11 @@
 
             }
         },
+        methods: {
+            clickeado() {
+                this.$router.push({path:'/App#profile'})
+            }
+        }
     }
 </script>
 
